@@ -23,7 +23,7 @@ A configuração de moedas usadas para retornar o troco. Deve-se dizer quantas m
 ## TODO
 
 - [x] Criar mais arquivos de entrada.
-- [ ] Leitura do arquivo de entrada.
+- [x] Leitura do arquivo de entrada.
 - [x] Estratégia Gulosa.
 - [ ] Criar ordenação
 - [ ] Estratégia Gulosa com ordenação.
