@@ -11,7 +11,7 @@ def getBiggerValue(array):
 
 def convertValueToCents(value):
     return int(float(value) * 100)
-    
+
 
 def openFile(filename):
     with open(filename, 'r') as f:
@@ -42,6 +42,7 @@ def getTime(func, filename):
     end = time.time()
     print("Value: ", value)
     print("Change: ", change)
-    print("Is valid: ", validate(changeCoins, change, value))
+    print("Coins: ", changeCoins)
+    # print("Is valid: ", validate(changeCoins, change, value))
 
     print("Tempo de execucao: ", end - start)

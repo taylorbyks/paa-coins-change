@@ -25,8 +25,8 @@ A configuração de moedas usadas para retornar o troco. Deve-se dizer quantas m
 - [x] Criar mais arquivos de entrada.
 - [x] Leitura do arquivo de entrada.
 - [x] Estratégia Gulosa.
-- [ ] Criar ordenação
-- [ ] Estratégia Gulosa com ordenação.
+- [x] Criar ordenação
+- [x] Estratégia Gulosa com ordenação.
 - [ ] Estratégia do tipo força bruta.
-- [ ] Monitorar o tempo de execução.
+- [x] Monitorar o tempo de execução.
 - [ ] Calcular a complexidade assintótica
