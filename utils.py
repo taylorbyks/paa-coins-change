@@ -24,15 +24,15 @@ def openFile(filename):
     return value, coins
 
 
-def contCoins(coins):
+def countCoins(coins):
     count = 0
     for coin in coins:
-        count += coin
+        count += coin * coins[coin]
     return count
 
 
 def validate(coins, change, value):
-    return change == contCoins(coins) and change >= value
+    return change == countCoins(coins) and change >= value
 
 
 def getTime(func, filename):
@@ -43,6 +43,6 @@ def getTime(func, filename):
     print("Value: ", value)
     print("Change: ", change)
     print("Coins: ", changeCoins)
-    # print("Is valid: ", validate(changeCoins, change, value))
+    print("Is valid: ", validate(changeCoins, change, value))
 
     print("Tempo de execucao: ", end - start)
