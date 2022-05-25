@@ -7,6 +7,11 @@ def greedy(value, coins):
 
     while value > change and len(coins) > 0:
         coin = utils.getBiggerValue(coins)
+        while coin + change > value:
+            if len(coins) == 1:
+                break
+            coins.remove(coin)
+            coin = utils.getBiggerValue(coins)
         coins.remove(coin)
         changeCoins[coin] = changeCoins.get(coin, 0) + 1
         change += coin
@@ -20,7 +25,11 @@ def greedySort(value, coins):
     changeCoins = {}
 
     while value > change and len(sortCoins) > 0:
-        coin = sortCoins[0]
+        i = 0
+        coin = sortCoins[i]
+        while coin + change > value:
+            i += 1
+            coin = sortCoins[i]
         sortCoins.remove(coin)
         changeCoins[coin] = changeCoins.get(coin, 0) + 1
         change += coin
