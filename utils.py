@@ -1,6 +1,14 @@
 import time
 
 
+def reverseTimSort(array):
+    for i in range(len(array)):
+        for j in range(i):
+            if array[j] > array[i]:
+                array[j], array[i] = array[i], array[j]
+    return array
+
+
 def getBiggerValue(array):
     biggerValue = 0
     for item in array:
