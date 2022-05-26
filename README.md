@@ -27,6 +27,6 @@ A configuração de moedas usadas para retornar o troco. Deve-se dizer quantas m
 - [x] Estratégia Gulosa.
 - [x] Criar ordenação
 - [x] Estratégia Gulosa com ordenação.
-- [ ] Estratégia do tipo força bruta.
+- [x] Estratégia do tipo força bruta.
 - [x] Monitorar o tempo de execução.
-- [ ] Calcular a complexidade assintótica
+- [x] Calcular a complexidade assintótica
